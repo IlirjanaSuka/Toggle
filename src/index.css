@@ -1,0 +1,66 @@
+/* index.css */
+
+
+
+/* .faq-items-wrapper {
+  border: 1px solid #ddd;
+} */
+
+.faq-item {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 67%; /* Set a smaller width for the FAQ items */
+  margin: 10px auto; /* Center the FAQ items in the container */
+}
+
+.question-wrapper {
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fffefe;
+}
+
+.toggle-icon {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Styles for the up and down arrow */
+.toggle-icon.up {
+  transform: rotate(180deg);
+}
+
+.toggle-icon.up {
+  transform: rotate(0deg);
+}
+.question {
+  margin: 0;
+  height: 50px; /* Set a bigger height for the question section */
+}
+
+.answer-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-item.expanded .answer-wrapper {
+  max-height: 200px; /* Set a bigger max-height for the answer section */
+}
+
+.answer {
+  margin: 0;
+  margin-left: 4%;
+  height: 100px;color: gray;
+}
+hr{
+  margin-left: 2%;
+  margin-right: 2%;
+  color: gray;
+}
